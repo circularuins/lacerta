@@ -1,0 +1,47 @@
+{
+  "name": "lacerta-backend",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@graphql-yoga/plugin-disable-introspection": "^2.19.1",
+    "@hono/node-server": "^1.19.12",
+    "@pothos/core": "^4.12.0",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.2",
+    "graphql": "^16.13.2",
+    "graphql-yoga": "^5.18.1",
+    "hono": "^4.12.9",
+    "jose": "^6.2.2",
+    "postgres": "^3.4.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.5.0",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-drizzle": "^0.2.3",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.58.0",
+    "vitest": "^4.1.2"
+  }
+}
